@@ -50,7 +50,7 @@ const typeController = (e) => {
     display.innerHTML += `<span class="red">${
       newLetter === " " ? "▪" : newLetter
     }</span>`;
-    errorCount++
+    errorCount++;
   }
 
   // check if given question text is equal to user typed text
@@ -144,8 +144,8 @@ setInterval(() => {
   } seconds`;
 }, 1000);
 
-window.addEventListener('keydown', (e) => {  
-  if (e.keyCode === 32 && e.target === document.body) {  
-    e.preventDefault();  
-  }  
+window.addEventListener("keydown", (e) => {
+  if (e.keyCode === 32 && e.target === document.body) {
+    e.preventDefault();
+  }
 });

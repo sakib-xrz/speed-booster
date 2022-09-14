@@ -23,7 +23,9 @@
     <!-- navbar start  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand logo" href="index.html"><img src="./logo.png" /></a>
+        <a class="navbar-brand logo" href="index.html"
+          ><img src="./logo.png"
+        /></a>
         <div
           class="collapse navbar-collapse d-flex justify-content-lg-end justify-content-center"
           id="navbarNavAltMarkup"
@@ -40,79 +42,169 @@
     <!-- navbar end  -->
 
     <main class="container my-5">
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item border-1 border-secondary">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Difference between Local Storage and Session Storage.
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body bg-black bg-opacity-75 text-light">
-                  <strong class="text-decoration-underline">Local Storage</strong> <br> 
-                  &#8594 The storage capacity of local storage is 5MB/10MB <br>
-                  &#8594 As it is not session-based, it must be deleted via javascript or manually <br> <br> 
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item border-1 border-secondary">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button bg-dark text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Difference between Local Storage and Session Storage.
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body bg-black bg-opacity-75 text-light">
+              <strong class="text-decoration-underline">Local Storage</strong>
+              <br />
+              → The storage capacity of local storage is 5MB/10MB <br />
+              → As it is not session-based, it must be deleted via javascript or
+              manually <br />
+              <br />
 
-                  <strong class="text-decoration-underline"> Session Storage</strong> <br> 
-                  &#8594 The storage capacity of session storage is 5MB <br>
-                  &#8594 It's session-based and works per window or tab. <br>
-                </div> 
-              </div>
-            </div>
-            <div class="accordion-item border-1 border-secondary">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    What is Global Scope and Block Scope?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body bg-black bg-opacity-75 text-light">
-                    <strong class="text-decoration-underline">Global Scope</strong> <br> 
-                    &#8594 Global scope is the context where everything in a Javascript program executes by default. This scope includes all variables, objects, and references that are not contained within a customized scope defined by a programmer.Global scope is the entire Javascript execution environment. <br> <br> 
-  
-                    <strong class="text-decoration-underline">Block Scope</strong> <br> 
-                    &#8594 Block scope variable means that the variable defined within a block will not be accessible from outside the block. A block can reside inside a function, and a block scoped variable will not be available outside the block even if the block is inside a function.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border-1 border-secondary">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    How does event loop work?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body bg-black bg-opacity-75 text-light">
-                  <div class="d-flex justify-content-center"><img class="img-fluid" src="javascript-event-loop.png" alt="event loop"> 
-                  </div> <br>
-                  &#8594 Event loop is a programming construct that allows a program to handle multiple events or tasks simultaneously. It works by having the program keep track of all the events or tasks that need to be processed, and then processing them one by one as they come in. This can be a very efficient way to handle a lot of events or tasks, as it prevents the program from getting bogged down by having to process everything at once. <br> <br>
-
-                  &#8594 The event loop is a mechanism that allows JavaScript to perform non-blocking operations. When an asynchronous task is started, the event loop will start running. Once the task is completed, the event loop will again check for any other tasks that need to be performed. This process will continue until all tasks have been completed.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border-1 border-secondary">
-              <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Different way to get undefined.
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                <div class="accordion-body bg-black bg-opacity-75 text-light">
-                    &#8594 Variable that is not initialized will be undefined <br>
-                    &#8594 Function with no return will be undefined<br>
-                    &#8594 Parameter that is not passed will be undefined <br>
-                    &#8594 If return has nothing on the right side will return undefined <br>
-                    &#8594 Property that doesn't exists on an object will give undefined <br>
-                    &#8594 Accessing array elements outside of the index range will give undefined<br>
-                    &#8594 Deleting an element inside an array will be undefined<br>
-                    &#8594 Set a value directly to undefined
-                </div>
-              </div>
+              <strong class="text-decoration-underline">
+                Session Storage</strong
+              >
+              <br />
+              → The storage capacity of session storage is 5MB <br />
+              → It's session-based and works per window or tab. <br />
             </div>
           </div>
+        </div>
+        <div class="accordion-item border-1 border-secondary">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed bg-dark text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              What is Global Scope and Block Scope?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body bg-black bg-opacity-75 text-light">
+              <strong class="text-decoration-underline">Global Scope</strong>
+              <br />
+              → Global scope is the context where everything in a Javascript
+              program executes by default. This scope includes all variables,
+              objects, and references that are not contained within a customized
+              scope defined by a programmer.Global scope is the entire
+              Javascript execution environment. <br />
+              <br />
+
+              <strong class="text-decoration-underline">Block Scope</strong>
+              <br />
+              → Block scope variable means that the variable defined within a
+              block will not be accessible from outside the block. A block can
+              reside inside a function, and a block scoped variable will not be
+              available outside the block even if the block is inside a
+              function.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border-1 border-secondary">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed bg-dark text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              How does event loop work?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body bg-black bg-opacity-75 text-light">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="img-fluid"
+                  src="javascript-event-loop.png"
+                  alt="event loop"
+                />
+              </div>
+              <br />
+              → Event loop is a programming construct that allows a program to
+              handle multiple events or tasks simultaneously. It works by having
+              the program keep track of all the events or tasks that need to be
+              processed, and then processing them one by one as they come in.
+              This can be a very efficient way to handle a lot of events or
+              tasks, as it prevents the program from getting bogged down by
+              having to process everything at once. <br />
+              <br />
+
+              → The event loop is a mechanism that allows JavaScript to perform
+              non-blocking operations. When an asynchronous task is started, the
+              event loop will start running. Once the task is completed, the
+              event loop will again check for any other tasks that need to be
+              performed. This process will continue until all tasks have been
+              completed.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border-1 border-secondary">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed bg-dark text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              Different way to get undefined.
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body bg-black bg-opacity-75 text-light">
+              → Variable that is not initialized will be undefined <br />
+              → Function with no return will be undefined<br />
+              → Parameter that is not passed will be undefined <br />
+              → If return has nothing on the right side will return undefined
+              <br />
+              → Property that doesn't exists on an object will give undefined
+              <br />
+              → Accessing array elements outside of the index range will give
+              undefined<br />
+              → Deleting an element inside an array will be undefined<br />
+              → Set a value directly to undefined
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
