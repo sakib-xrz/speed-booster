@@ -195,3 +195,8 @@ button {
   }
 }
 
+@media screen and (min-width: 767px) and (max-width: 1023px){
+  #histories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
