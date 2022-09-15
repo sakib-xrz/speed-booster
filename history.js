@@ -38,3 +38,8 @@ function displayHistory() {
     histories.appendChild(newRow);
   });
 }
+
+const clearAll = () => {
+  localStorage.removeItem("testHistory");
+  displayHistory()
+}
